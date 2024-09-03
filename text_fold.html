@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project</title>
+<style>
+.content{
+border:10px solid gray;
+width:400px;
+height:400px;
+border-radius:8px;
+margin:100px auto;
+position:relative;
+overflow:hidden;
+}
+.content img{
+width:inherit;
+height:inherit;
+transition:all 0.5s;
+}
+.content:hover img{
+transform:scale(1.2,1.2);
+}
+.content .main{
+position:absolute;
+top:0;
+background-color:rgba(0,0,0,0.5);
+width:50%;
+height:100%;
+padding:10px;
+color:white;
+box-sizing:border-box;
+transform:perspective(400px) rotateY(0deg);
+transform-origin:left;
+transition:all 0.5s;
+text-align:justify;
+}
+.content:hover .main{
+transform:perspective(400px) rotateY(60deg);
+}
+</style>
+</head>
+<body>
+<div class="content">
+<img src="C:\Users\Madiri Padma\Downloads\pexels-ryutaro-5472431.jpg">
+<div class="main">
+<h3>Beautiful Place</h3>
+<p>Try a different browser to see if the issue persists. Some browsers may handle paths and permissions differently. Ensure that the image file has the correct permissions set so that it can be accessed by your browser.</p>
+</div>
+</div>
+</body>
+</html>
